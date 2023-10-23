@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    min-width: 100%;
+    min-height: 100vh;
+}
+.card {
+    border-radius: 8px;
+    margin: auto;
+    margin-top: 40px;
+    background-color: #fff;
+    width: 300px;
+    box-shadow: 0 2px 18px -2px rgba(0, 0, 0, 0.5);
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+img{
+    display: block;
+    margin: auto;
+    height: 90px;
+    width: 150px;
+}
+.from-input input{
+    background: transparent;
+    color: #495057;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    display: block;
+    margin: auto;
+    width: 250px;
+    height: 35px;
+    padding-left: 5px;
+}
+.from-input{
+    margin-top: 15px;
+}
+.btn{
+    height:35px;
+    display: block;
+    margin: auto;
+    border-radius: 8px;
+    color: #fff;
+    background-color: rgb(14, 166, 226);
+    width: 252px;
+    border: none;
+    margin-top: 15px;
+}
+.gasss{
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 10px;
+    font-size: 11px;
+    margin-top: 10px;
+}
+.sss{
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 10px;
+    margin-top: 10px;
+}
+.agama-dropdown {
+    background: transparent;
+    color: #495057;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    display: block;
+    margin: auto;
+    width: 257px;
+    height: 35px;
+    padding-left: 5px;
+}
