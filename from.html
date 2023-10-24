@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Order</title>
@@ -26,6 +27,26 @@
                 <input type="email" placeholder="Email">
             </div>
             <div class="from-input">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="penghasilan-ayah"
+                  placeholder="Masukkan Penghasilan Ayah"
+                  name="penghasilan-ayah"
+                  oninput="formatPenghasilan(this)"
+                  required
+                /> </div>
+                <div class="from-input">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="penghasilan-ibu"
+                      placeholder="Masukkan Penghasilan Ibu"
+                      name="penghasilan-ibu"
+                      oninput="formatPenghasilan(this)"
+                      required
+                    /> </div>
+            <div class="from-input">
                 <select class="agama-dropdown" placeholder="Agama">
                     <option value="Islam">Agama</option>
                     <option value="Islam">Islam</option>
@@ -37,6 +58,7 @@
                     <option value="Konghucu">DLL.</option>
                 </select>
             </div>
+            
             <div class="sss">
                 <input type="checkbox" id="" />
                 <label for="mendaki">Pria</label>
@@ -49,5 +71,37 @@
             </div>
             <a href="index.html"><button class="btn">Login</button></a>
         </div>
+        <script>
+            function formatPenghasilan(input) {
+              // Menghapus tanda titik dan koma sebelum melakukan pemformatan
+              var value = input.value.replace(/[\.,]/g, "");
+      
+              // Menghapus karakter non-angka
+              value = value.replace(/\D/g, "");
+      
+              // Menggunakan Number() untuk mengkonversi nilai ke tipe data angka
+              var numberValue = Number(value);
+      
+              // Memeriksa apakah angka adalah angka valid
+              if (!isNaN(numberValue)) {
+                // Menggunakan toLocaleString() untuk memformat angka dengan tanda titik sebagai ribuan, ratusan ribu, jutaan, dll.
+                var formattedValue = numberValue.toLocaleString();
+      
+                // Menambahkan awalan 'Rp. ' ke nilai yang diformat
+                formattedValue = "Rp. " + formattedValue;
+      
+                // Memasukkan nilai yang diformat kembali ke input
+                input.value = formattedValue;
+              }
+            }
+          </script>
+        <script>
+            document.addEventListener("input", function (e) {
+              if (e.target.tagName === "INPUT" && e.target.type === "number") {
+                // Periksa apakah input mengandung huruf "e" dan hapus jika ditemukan
+                e.target.value = e.target.value.replace(/e/g, "");
+              }
+            });
+          </script>
 </body>
 </html>

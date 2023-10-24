@@ -3,89 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>dewata lombok tour</title>
+    <title>Dewata Lombok Tour</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
-    <nav>
-        <div class="wrapper">
-            <div class="logo"><a href=' '>Dewata Lombok Tour.</a></div>
-            <div class="menu">
-                <ul>
-                    <li><a href="index.html" class="a-navbar">Home</a></li>
-                    <li><a href="profil.html" class="a-navbar">profil</a></li>
-                    <li><a href="paket.html" class="a-navbar">paket tour</a></li>
-                    <li><a href="partners.html" class="a-navbar">partners</a></li>
-                    <li><a href="contact.html" class="a-navbar">contact</a></li>
-                    <li><a href="from.html" class="tbl-biru">sign up</a></li>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html" style="color: blue;">Dewata Lombok Tour</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="profil.html">Profil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="paket.html">Paket Tour</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="partners.html">Partners</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-danger" href="from.html">Sign up</a>
+                    </li>
                 </ul>
             </div>
         </div>
-    </nav>
-    <div class="wrapper">
-        <section id="home">
-            <img class="p" src="dewata lombok.png"/>
-            <div class="kolom-sm">
-                <p class="deskripsi">Travel & Tour Wisata Lombok </p>
-                <h2 class="qwe">Harga Terjangkau & lengkap</h2>
-                <p>Paket tour dengan destinasi <br> wisata tujuan dan fasilitas terlengkap</p>
-                <p><a href="" class="tbl-pink">pelajari lebih lanjut</a></p>
-            </div>
-        </section>
-
-        <section id="profil">
-            <div class="kolom">
-                <h2>profil</h2>
-                <h1>Lombok Tour </h1>
-                <p>Agen tour and travel yang khusus menyediakan layanan paket tour wisata Lombok dan sewa mobil untuk area Lombok dan sekitarnya. Lombok tours sudah berpengalaman lama sebagai agen tour travel mampu menjamin setiap perjalanan wisata Anda aman dan nyaman. Dapatkan paket honeymoon dan tour lainnya dengan harga terjangkau disini.</p>
-                <p><a href="" class="tbl-biru">pelajari lebih lanjut</a></p>
-            </div> 
-            <img class="p" src="wisata lombokk.jpg" alt="">
-        </section>
-        <div id="contact">
-            <div class="footer">
-                <div class="footer-section">
-                    <h3>Dewata lombok</h3>
-                    <p>Jl. Palapa 1 no 09 Cakra Barat, Mataram, Lombok-Indonesia.</p>
-                    <p>kode pos: 83231</p>
+    </nav>    
+        <section id="profil" class="mt-4">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Profil</h2>
+                    <h1>Lombok Tour</h1>
+                    <p>Agen tour and travel yang khusus menyediakan layanan paket tour wisata Lombok dan sewa mobil untuk area Lombok dan sekitarnya. Lombok tours sudah berpengalaman lama sebagai agen tour travel mampu menjamin setiap perjalanan wisata Anda aman dan nyaman. Dapatkan paket honeymoon dan tour lainnya dengan harga terjangkau disini.</p>
+                    <p><a href="" class="tbl-biru">Pelajari lebih lanjut</a></p>
                 </div>
-                <div  class="footer-section">
-                    <h3>About</h3>
-                    <p>Tour Harian <br> Paket Tour <br> Paket Sewa Mobil <br> Glass Bottom Boat </p>
-                </div>
-                <div class="footer-section">
-                    <h3>contact</h3>
-                    <p>WA : 08175735987</p>
-                    <P>Telp : 087821332889</P>
-                </div>
-                <div class="footer-section">
-                    <h3>social</h3>
-                    <p>youtube: </b>Dewata lombok</p>
-                    <p>instagram: </b>Dewata_lombok</p>
-                    <p>facebook: </b>Dewata Lombok</p>
-                </div>
+                <div class="col-md-6">
+                    <img class="p img-fluid" src="wisata lombokk.jpg" alt="Wisata Lombok">
                 </div>
             </div>
-    </div>
-</div>
-<div class="scroll-to-top">
-    <a href="#profil">
-        <div class="arrow-container">
-            <img src="OIP-removebg-preview.png" alt="Scroll to Top">
+        </section>
+ 
+        <div id="contact" class="mt-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="footer-section">
+                            <h3>Dewata Lombok</h3>
+                            <p>Jl. Palapa 1 no 09 Cakra Barat, Mataram, Lombok-Indonesia.</p>
+                            <p>kode pos: 83231</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footer-section">
+                            <h3>About</h3>
+                            <p>Tour Harian</p>
+                            <p>Paket Tour</p>
+                            <p>Paket Sewa Mobil</p>
+                            <p>Glass Bottom Boat</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footer-section">
+                            <h3>Contact</h3>
+                            <p>WA: 08175735987</p>
+                            <p>Telp: 087821332889</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footer-section">
+                            <h3>Social</h3>
+                            <p>YouTube: Dewata Lombok</p>
+                            <p>Instagram: Dewata_lombok</p>
+                            <p>Facebook: Dewata Lombok</p>
+                        </div>
+                    </div>
+                <div class="footer-section">
+                    <h3>Location</h3>
+                    <div style="position: relative; overflow: hidden; padding-bottom: 56.25%; height: 0;">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3945.0790403937513!2d116.11824787369962!3d-8.588399287179902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dcdbfbfb7465215%3A0x6a02061b3bd8896!2sDewata%20Lombok%20Tour!5e0!3m2!1sid!2sid!4v1698079604122!5m2!1sid!2sid" width="1000" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
         </div>
-    </a>
-</div>
-<script>
-    window.addEventListener('scroll', () => {
-        const scrollY = window.scrollY;
-        const scrollTopButton = document.querySelector('.scroll-to-top');
-
-        if (scrollY > 200) {
-            scrollTopButton.style.opacity = '1';
-        } else {
-            scrollTopButton.style.opacity = '0';
-        }
-    });
-</script>
-</body>
-</html>
+        
+    </div>
+    <div class="scroll-to-top">
+        <a href="#profil">
+            <div class="arrow-container">
+                <img src="arrow-297439_1280.webp" alt="Scroll to Top">
+            </div>
+        </a>
+    </div>
+    <script>
+        window.addEventListener('scroll', () => {
+            const scrollY = window.scrollY;
+            const scrollTopButton = document.querySelector('.scroll-to-top');
+    
+            if (scrollY > 200) {
+                scrollTopButton.style.opacity = '1';
+            } else {
+                scrollTopButton.style.opacity = '0';
+            }
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    </body>
+    </html>
